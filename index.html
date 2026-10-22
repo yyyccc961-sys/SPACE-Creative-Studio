@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b"><title>SPACE | Creative Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="config.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">S</span><span>SPACE<small>CREATIVE STUDIO</small></span></a>
+<nav><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#contact">تواصل</a></nav>
+<a class="nav-cta" href="#contact">خلّينا نبدأ ↗</a><button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button></header>
+<main>
+<section class="hero" id="home"><div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div><div class="hero-inner">
+<div class="eyebrow"><span class="pulse"></span> أفكار جريئة. تنفيذ مختلف.</div>
+<h1>نصنع حضورك.<br><span>ونخلّي فكرتك</span><br>تنشاف.</h1>
+<p class="hero-copy">استوديو إبداعي يساعد العلامات التجارية على الظهور بصورة أقوى من خلال التصميم، المحتوى، والحلول الرقمية.</p>
+<div class="hero-actions"><a class="button button-light" href="#contact">اطلب خدمتك <span>↗</span></a><a class="text-link" href="#work">شوف أعمالنا <span>↓</span></a></div>
+<div class="hero-foot"><span>DESIGN · CONTENT · DIGITAL</span><span>نحوّل الأفكار إلى تجارب</span></div>
+</div><div class="hero-side-label">SPACE / 001 — CREATIVE PARTNER</div></section>
+<section class="intro section-wrap" id="about"><div class="section-tag">01 / من نحن</div><div class="intro-content"><h2>مو مجرد تصميم.<br><span>هذا انطباع يبقى.</span></h2><p>نؤمن أن كل مشروع عنده قصة تستحق تنحچي بطريقة مميزة. نشتغل وياك حتى نبني هوية واضحة، محتوى ملفت، وتجربة رقمية تمثّل طموحك.</p></div><div class="stat-row"><div><strong>01</strong><span>فكرة واضحة</span></div><div><strong>02</strong><span>تنفيذ مدروس</span></div><div><strong>03</strong><span>أثر يستمر</span></div></div></section>
+<section class="services section-wrap" id="services"><div class="section-heading"><div><div class="section-tag">02 / شنو نقدّم</div><h2>خدمات تخلي مشروعك<br><span>يتقدّم بثقة.</span></h2></div><p>من أول فكرة إلى آخر تفصيلة، نساعدك تطلع بأفضل صورة.</p></div><div class="service-grid" id="servicesGrid"><article class="service-card"><span class="service-no">01</span><div class="service-icon">✳</div><h3>الهوية والتصميم</h3><p>هويات بصرية، تصاميم سوشيال ميديا، ومواد تسويقية تعبّر عن شخصيتك.</p></article><article class="service-card"><span class="service-no">02</span><div class="service-icon">▧</div><h3>المحتوى والإعلانات</h3><p>أفكار محتوى وإعلانات إبداعية تساعدك توصل رسالتك للجمهور المناسب.</p></article><article class="service-card"><span class="service-no">03</span><div class="service-icon">⌘</div><h3>المواقع والحلول الرقمية</h3><p>مواقع عصرية ومتجاوبة تعرض خدماتك وتسهّل التواصل ويا عملائك.</p></article></div></section>
+<section class="work section-wrap" id="work"><div class="section-heading"><div><div class="section-tag">03 / مختارات من أعمالنا</div><h2>الفكرة تحچي<br><span>عن نفسها.</span></h2></div><p>نماذج من عالمنا الإبداعي. أعمالك القادمة ممكن تكون هنا.</p></div><div class="portfolio-grid" id="portfolioGrid"><div class="portfolio-placeholder"><span>SPACE / PROJECT 01</span><strong>مساحة للأفكار القادمة</strong><p>راح تظهر الأعمال اللي يضيفها المدير من لوحة الإدارة هنا.</p></div></div></section>
+<section class="contact section-wrap" id="contact"><div class="contact-panel"><div class="section-tag">04 / نبدأ مشروعك؟</div><h2>عندك فكرة؟<br><span>خلّينا نطلعها للنور.</span></h2><p>احچيلنا عن مشروعك وشنو تحتاج، ونتواصل وياك حتى نحدد الخطوة الجاية.</p><form id="requestForm"><div class="form-row"><label>اسمك<input name="customer_name" required maxlength="100" placeholder="الاسم الكامل"></label><label>رقم التواصل<input name="phone" required maxlength="40" placeholder="رقم الهاتف أو واتساب"></label></div><label>شنو الخدمة اللي تحتاجها؟<input name="service" maxlength="120" placeholder="مثلاً: تصميم هوية، موقع إلكتروني..."></label><label>تفاصيل إضافية<textarea name="details" rows="3" maxlength="2000" placeholder="احچيلنا أكثر عن فكرتك (اختياري)"></textarea></label><button class="button button-light" type="submit">إرسال الطلب <span>↗</span></button><p id="formMessage" class="form-message" aria-live="polite"></p></form></div><div class="contact-aside"><div class="aside-label">LET'S MAKE SOMETHING GOOD.</div><div class="big-star">✳</div><p>فكرتك تستاهل مساحة.</p><div class="contact-links" id="contactLinks"><a href="mailto:hello@space.studio">راسلنا بالإيميل ↗</a></div></div></section>
+</main>
+<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span>SPACE<small>CREATIVE STUDIO</small></span></a><span>© <span id="year"></span> SPACE Studio. جميع الحقوق محفوظة.</span><a href="admin.html" class="admin-foot-link">إدارة الموقع</a></footer>
+</body></html>
